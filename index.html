@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Rainwater Harvesting</title>
+</head>
+<body>
+
+    <header>
+     
+        <div class="hero">
+            <h1>RAINWATER HARVESTING </h1>
+            <p>Save water, save the planet.</p>
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="benefit.html">Benefits</a></li>
+                    <li><a href="More.html">More</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rainwater Harvesting Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 20px;
+            background-color: #f4f4f4;
+            color: #333;
+        }
+
+        header {
+            background-color: #4CAF50;
+            padding: 1em;
+            text-align: center;
+            color: white;
+        }
+
+        section {
+            margin: 20px 0;
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+        }
+
+        input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 16px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+        <h1>Rainwater Harvesting Calculator</h1>
+
+    <section>
+        <label for="location">Location (inches of rainfall per year):</label>
+        <input type="number" id="location" placeholder="Enter annual rainfall" required>
+
+        <label for="roofSize">Roof Size (square feet):</label>
+        <input type="number" id="roofSize" placeholder="Enter roof size" required>
+
+        <label for="efficiency">Collection Efficiency (%):</label>
+        <input type="number" id="efficiency" placeholder="Enter collection efficiency" required>
+
+        <button onclick="calculateYield()">Calculate Yield</button>
+
+        <div id="result"></div>
+    </section>
+
+    <script>
+        function calculateYield() {
+            // Get input values
+            var location = parseFloat(document.getElementById('location').value);
+            var roofSize = parseFloat(document.getElementById('roofSize').value);
+            var efficiency = parseFloat(document.getElementById('efficiency').value);
+
+            // Perform calculation
+            var yield = (location * roofSize * (efficiency / 100)).toFixed(2);
+
+            // Display result
+            document.getElementById('result').innerHTML = "Estimated Rainwater Yield: " + yield + " gallons per year";
+        }
+    </script>
+    
+
+</body>
+</html>
+
+</body>
+</html>
